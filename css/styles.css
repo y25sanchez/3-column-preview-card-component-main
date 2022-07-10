@@ -1,0 +1,149 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  --white: #fff;
+
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+    height: 1328px;
+    width: 328px;
+    margin: 90px auto 88px;
+    border-radius: 10px;
+    display: grid;
+    color: var(--Very-light-gray-background-headings-buttons);
+    overflow: hidden;
+    
+}
+
+img{
+    margin: 50px 0 0 50px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin: 30px 0 25px 52px;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+p{
+    line-height: 26px;
+    margin: 0 44px;
+    color: var(--Transparent-white-paragraphs);
+}
+
+/*----------------Sedan Card---------------*/
+.sedan {
+    background-color: var(--Bright-orange); 
+    
+
+}
+
+.sedan-footer a{
+    display: grid;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    color: orange;
+    place-items: center;
+    text-decoration: none;
+    margin: 30px 0 0 52px;
+}
+
+/*----------------Suv Card---------------*/
+.suv {
+    background-color: var(--Dark-cyan);
+}
+.suv-footer a{
+    display: grid;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    color: var(--Dark-cyan);
+    place-items: center;
+    text-decoration: none;
+    margin: 30px 0 0 52px;
+}
+
+
+/*----------------Luxury Card---------------*/
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+.luxury-body p {
+    font-size: 16px;
+}
+.luxury-footer a{
+    display:grid;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    color: var(--Very-dark-cyan);
+    place-items: center;
+    text-decoration: none;
+    margin: 30px 0 0 52px;
+}
+a{
+    transition: 0.2s ease;
+}
+ 
+.sedan-footer a:hover{
+    background-color: var(--Bright-orange);
+    border: 1px solid var(--white);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+.suv-footer a:hover{
+    background-color: var(--Dark-cyan);
+    border: 1px solid var(--white);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+.luxury-footer a:hover{
+    background-color: var(--Very-dark-cyan);
+    border: 1px solid var(--white);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+/*----------------------------Desktop-------------------------*/
+@media screen and (min-width:769px) {
+    main {
+        height: 500px;
+        min-width: 920px;
+        display: flex;
+        
+    }
+    .sedan-footer a {
+        margin-top: 80px;
+    }
+    .suv-footer a {
+        margin-top: 80px;
+    }
+    .luxury-footer a {
+        margin-top: 80px;
+    }
+    p{
+        margin: 0 48px;
+    }
+    
+    
+}
